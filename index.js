@@ -3,7 +3,7 @@ const bot = new Discord.Client({disableEveryone : false});
 const botconfig = require("./botconfig.json");
 //fs-extra//emoji.szena mondjuk xd
 // const cooldown = require("./cooldown.json");
-let name = "Fun bot";
+let name = "Cassiopeia";
 
 ////////////////////////////////////////////////
 
