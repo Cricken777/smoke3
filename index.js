@@ -246,6 +246,20 @@ let nemitottrang = message.guild.roles.find(`name`, `muted`);
 if(!message.member.hasPermission("KICK_MEMBERS")) {
 if(message.member.roles.has(nemitottrang.id)) {
     message.delete();
+
+
+    if(cmd === `${prefix}teszt`){
+        let TesztEmbed = new Discord.MessageEmbed()
+        .setColor("#98AA12")
+        .setAuthor(message.author.username)
+        .setTitle("Teszt Embed!")
+        .addField("Irodalom:", "Líra\n Epika\n dráma")
+        .setThumbnail(message.author.displayAvatarURL())
+        .setImage(message.guild.iconURL())
+        .setDescription(`\`${prefix}\``)
+        .setFooter(`${botname} | ${message.createdAt}`)
+
+        message.channel.send(TesztEmbed)
 }
 }
 
